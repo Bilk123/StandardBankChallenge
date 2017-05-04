@@ -51,7 +51,7 @@ public class AverageProfit {
                 else if (averages.get(highestIndex) == averages.get(i))
                     if (intervals.get(highestIndex).range < intervals.get(i).range) highestIndex = i;
                     else if (intervals.get(highestIndex).range == intervals.get(i).range)
-                        if (intervals.get(highestIndex).A < intervals.get(i).A) highestIndex = 1;
+                        if (intervals.get(highestIndex).A < intervals.get(i).A) highestIndex = i;
             }
             answer.add(intervals.get(highestIndex));
 
